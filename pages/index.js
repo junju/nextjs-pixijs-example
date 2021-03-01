@@ -4,8 +4,10 @@ const MyStageNoSSR = dynamic(() => import('./components/MyStage'), {
   ssr: false
 });
 
-export default () => (
-  <div>
+const Page = () => (
+  <>
     <MyStageNoSSR/>
-  </div>
+  </>
 )
+
+export default Page;
